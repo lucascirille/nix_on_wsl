@@ -275,10 +275,10 @@ programs.git = {
       };
       git = {
         # Nueva sintaxis de LazyGit
-        pagers = [
+        diffRenderers = [
           {
             colorArg = "always";
-            pager = "delta --dark --paging=never";
+            command = "delta --dark --paging=never";
           }
         ];
         merging = {
